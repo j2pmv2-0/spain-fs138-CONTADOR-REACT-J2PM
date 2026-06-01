@@ -9,3 +9,40 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body {
+  background: #f5f7fb;
+}
+
+.seconds-counter {
+  max-width: 480px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.seconds-counter h5 {
+  margin-bottom: 0.15rem;
+}
+
+.digit-box {
+  width: 56px;
+  height: 76px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343a40;
+  background: #f8f9fa;
+  border-radius: 1rem;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 576px) {
+  .seconds-counter {
+    padding: 1rem;
+  }
+
+  .digit-box {
+    width: 48px;
+    height: 66px;
+    font-size: 1.75rem;
+  }
+}
